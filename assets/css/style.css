@@ -41,11 +41,17 @@ a {
   padding-block: 14px;
 }
 .header__location {
-  margin: 0;
   background-color: #EAEAEA;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   width: 100%;
   height: 50px;
-  align-content: center;
+}
+.header__location .fa-solid {
+  padding-right: 17px;
 }
 
 .explorer {
@@ -69,23 +75,53 @@ a {
 }
 
 .fonctionnement {
-  height: 440px;
+  padding-top: 48px;
+  padding-bottom: 68px;
 }
 .fonctionnement__pannel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.fonctionnement__pannel__text {
   background-color: #F6F6F6;
   display: flex;
-  margin-bottom: 25px;
+  flex-direction: row;
+  align-items: center;
+  width: 322px;
+  height: 72px;
+  border-radius: 25px;
+  padding-left: 33px;
+}
+.fonctionnement__pannel__text .fa-solid {
+  color: #7E7E7E;
+  padding-right: 27px;
+}
+.fonctionnement__pannel__text--color .fa-solid {
+  color: #9356DC;
+}
+.fonctionnement__pannel > h4 {
+  background-color: #9356DC;
+  color: white;
+  margin: 0;
+  padding-inline: 8px;
+  padding-block: 2px;
+  border-radius: 12px;
+  position: relative;
+  left: 14px;
 }
 
 .restaurants {
   background-color: #F6F6F6;
   padding-top: 54px;
   padding-bottom: 66px;
+  padding-inline: 20px;
 }
 .restaurants__card {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding-inline: 18px;
   gap: 18px;
 }
 .restaurants__card .card {
@@ -104,11 +140,17 @@ a {
   background-color: white;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.restaurants__card .card__content .fa-regular {
+  padding-right: 25px;
+}
 .restaurants__card .card__text {
   flex-direction: column;
+  padding-left: 15px;
 }
 .restaurants__card .card__title {
   margin-top: 16px;
@@ -130,6 +172,13 @@ a {
   height: 14px;
   padding-top: 22px;
   padding-bottom: 16px;
+}
+.footer__link__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__link__logo .fa-solid {
+  padding-right: 10px;
 }
 .footer__link h4 {
   margin: 0;
