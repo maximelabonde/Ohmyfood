@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood project",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/index.scss:assets/css/style.css"
+  },
+  "author": "labonde maxime",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.3"
+  }
+}
