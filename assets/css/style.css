@@ -173,6 +173,10 @@ a {
   padding-top: 22px;
   padding-bottom: 16px;
 }
+.footer__link {
+  display: flex;
+  flex-direction: column;
+}
 .footer__link__logo {
   display: flex;
   align-items: center;
@@ -180,7 +184,7 @@ a {
 .footer__link__logo .fa-solid {
   padding-right: 10px;
 }
-.footer__link h4 {
+.footer__link a {
   margin: 0;
   padding-bottom: 7px;
 }
