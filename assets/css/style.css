@@ -2,6 +2,10 @@
   font-family: "Roboto";
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: "Shrikhand";
   font-size: 28px;
@@ -35,12 +39,17 @@ a {
   text-align: center;
 }
 .header__image {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-self: center;
   height: 36px;
   padding-block: 14px;
+  padding-inline: 100%;
+  box-shadow: 0 2px 4px rgb(216.75, 216.75, 216.75);
 }
 .header__location {
+  position: relative;
   background-color: #EAEAEA;
   color: #353535;
   display: flex;
@@ -49,6 +58,7 @@ a {
   margin: 0;
   width: 100%;
   height: 50px;
+  box-shadow: 0 4px 4px rgb(191.25, 191.25, 191.25);
 }
 .header__location .fa-solid {
   padding-right: 17px;
@@ -66,23 +76,30 @@ a {
   padding-inline: 18px;
   padding-block: 13px;
   border: none;
-  border-radius: 50px;
+  border-radius: 25px;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   color: white;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 57px;
+  box-shadow: 0 4px 10px rgb(191.25, 191.25, 191.25);
 }
 
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 48px;
   padding-bottom: 68px;
+}
+.fonctionnement h2 {
+  position: relative;
+  right: 92px;
 }
 .fonctionnement__pannel {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   margin-bottom: 25px;
 }
 .fonctionnement__pannel__text {
@@ -92,8 +109,9 @@ a {
   align-items: center;
   width: 322px;
   height: 72px;
-  border-radius: 25px;
+  border-radius: 20px;
   padding-left: 33px;
+  box-shadow: 0 4px 15px rgb(216.75, 216.75, 216.75);
 }
 .fonctionnement__pannel__text .fa-solid {
   color: #7E7E7E;
@@ -110,7 +128,7 @@ a {
   padding-block: 2px;
   border-radius: 12px;
   position: relative;
-  left: 14px;
+  left: 10px;
 }
 
 .restaurants {
@@ -130,11 +148,21 @@ a {
   width: 100%;
 }
 .restaurants__card img {
+  position: relative;
   object-fit: cover;
   width: 100%;
   height: 225px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurants__card h5 {
+  position: absolute;
+  right: 45px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding-inline: 9px;
+  padding-block: 7px;
+  border-radius: 2px;
 }
 .restaurants__card .card__content {
   background-color: white;
