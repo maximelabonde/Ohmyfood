@@ -24,6 +24,10 @@ $main-background-color: #aa5454;
     font-family: 'Roboto';
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-family: 'Shrikhand';
 }
@@ -31,10 +35,6 @@ h1 {
 p {
     font-size: 18px;
     font-weight: 300;
-}
-
-body {
-    margin: 0;
 }
 
 a {
@@ -167,10 +167,7 @@ a {
                 align-items: center;
                 justify-content: space-between;
                 border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                .fa-regular {
-                    padding-right: 25px;
-                }
+                border-bottom-right-radius: 20px;             
             }
             &__text {
                 flex-direction: column;
@@ -185,6 +182,9 @@ a {
             &__subtitle {
                 margin-top: 0;
                 margin-bottom: 12px;
+            }
+            .fa-regular {
+                margin-right: 25px;
             }
         }
         img {
@@ -242,9 +242,20 @@ a {
         flex-direction: column;
         gap: 12px;
         .card {
+            position: relative;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 15px darken(white, 15%);
+            animation: menu-card 1s ease-out 500ms both;
+
+            @keyframes menu-card {
+                0% {
+                    right: 450px;
+                }
+                100% {
+                    right: 0;
+                }
+            }
             &__content {
                 padding-inline: 15px;
                 padding-block: 12px;
