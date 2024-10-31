@@ -224,7 +224,6 @@ a {
 }
 .menu__card .card {
   background-color: white;
-  border: none;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgb(216.75, 216.75, 216.75);
 }
@@ -279,7 +278,6 @@ a {
   justify-self: center;
   height: 36px;
   padding-block: 14px;
-  padding-inline: 100%;
   box-shadow: 0 2px 4px rgb(216.75, 216.75, 216.75);
 }
 .header__image__background {
