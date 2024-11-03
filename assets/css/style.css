@@ -205,7 +205,26 @@ a {
   width: 40px;
 }
 .menu__part {
+  position: relative;
   margin-top: 40px;
+  animation: menu-part 1s ease-out both;
+}
+@keyframes menu-part {
+  0% {
+    right: 450px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.menu__part--1 {
+  animation-delay: 200ms;
+}
+.menu__part--2 {
+  animation-delay: 400ms;
+}
+.menu__part--3 {
+  animation-delay: 600ms;
 }
 .menu__title {
   display: flex;
@@ -227,15 +246,6 @@ a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgb(216.75, 216.75, 216.75);
-  animation: menu-card 1s ease-out 500ms both;
-}
-@keyframes menu-card {
-  0% {
-    right: 450px;
-  }
-  100% {
-    right: 0;
-  }
 }
 .menu__card .card__content {
   padding-inline: 15px;

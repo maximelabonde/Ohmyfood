@@ -225,7 +225,27 @@ a {
         width: 40px;
     }
     &__part {
+        position: relative;
         margin-top: 40px;
+        animation: menu-part 1s ease-out both;
+
+        @keyframes menu-part {
+            0% {
+                right: 450px;
+            }
+            100% {
+                right: 0;
+            }
+        }
+        &--1 {
+            animation-delay: 200ms;
+        }
+        &--2 {
+            animation-delay: 400ms;
+        }
+        &--3 {
+            animation-delay: 600ms;
+        }
     }
     &__title {
         display: flex;
@@ -246,16 +266,7 @@ a {
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 15px darken(white, 15%);
-            animation: menu-card 1s ease-out 500ms both;
 
-            @keyframes menu-card {
-                0% {
-                    right: 450px;
-                }
-                100% {
-                    right: 0;
-                }
-            }
             &__content {
                 padding-inline: 15px;
                 padding-block: 12px;
