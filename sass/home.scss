@@ -23,23 +23,39 @@ $main-background-color: #aa5454;
 * {
     font-family: 'Roboto';
 }
-
 body {
     margin: 0;
 }
-
 h1 {
     font-family: 'Shrikhand';
 }
-
 p {
     font-size: 18px;
     font-weight: 300;
 }
-
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.like__btn {
+    display: flex;
+    .fa-solid{
+        position: absolute;
+        opacity: 0;
+        scale: 1.1;
+        padding-block: 10px;
+        padding-inline: 2px;
+        margin-inline: -2px;
+        margin-top: -10px;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(0deg, $main-color, $secondary-color);
+        transition: opacity 500ms;
+        &:hover {
+            opacity: 1;
+        }   
+    }
 }
 
 //loader
@@ -152,6 +168,9 @@ a {
     padding-top: 54px;
     padding-bottom: 66px;
     padding-inline: 20px;
+    .like__btn {
+        margin-right: 25px;
+    }
     &__card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -173,18 +192,13 @@ a {
                 flex-direction: column;
                 padding-left: 15px;
             }
-    
             &__title {
                 margin-top: 16px;
                 margin-bottom: 5px;
             }
-    
             &__subtitle {
                 margin-top: 0;
                 margin-bottom: 12px;
-            }
-            .fa-regular {
-                margin-right: 25px;
             }
         }
         img {
@@ -217,6 +231,9 @@ a {
     border-top-right-radius: 25px;
     position: relative;
     margin-top: -30px;
+    .like__btn {
+        margin-right: 40px;
+    }
     h2 {
         font-size: 16px;
         font-weight: 300;
@@ -228,13 +245,12 @@ a {
         position: relative;
         margin-top: 40px;
         animation: menu-part 1s ease-out both;
-
         @keyframes menu-part {
             0% {
-                right: 450px;
+                opacity: 0;
             }
             100% {
-                right: 0;
+                opacity: 1;
             }
         }
         &--1 {
@@ -252,10 +268,6 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        .fa-regular {
-            position: relative;
-            right: 30px;
-        }
     }
     &__card {
         display: flex;
