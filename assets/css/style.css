@@ -475,6 +475,7 @@ a {
   }
 }
 .menu__card .card__content {
+  text-align: left;
   padding-inline: 15px;
   padding-block: 12px;
   text-wrap: nowrap;
@@ -484,6 +485,9 @@ a {
   text-align: left;
   margin: 0;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__card .card__subtitle {
   flex-direction: row;
