@@ -82,7 +82,7 @@ a {
   }
 }
 .explorer {
-  background-color: #9c5b5b;
+  background-color: #F6F6F6;
   text-align: center;
   height: 287px;
 }
@@ -122,7 +122,8 @@ a {
 @media (min-width: 768px) {
   .fonctionnement {
     max-width: 1053px;
-    justify-content: center;
+    padding-inline: 20px;
+    margin-inline: auto;
   }
 }
 .fonctionnement > h2 {
@@ -296,7 +297,7 @@ a {
 }
 
 .restaurants {
-  background-color: #9c5b5b;
+  background-color: #F6F6F6;
   padding-top: 54px;
   padding-bottom: 66px;
   padding-inline: 20px;
@@ -368,7 +369,7 @@ a {
 }
 
 .menu {
-  background-color: #9c5b5b;
+  background-color: #F6F6F6;
   text-align: center;
   padding-inline: 17px;
   padding-bottom: 130px;
@@ -447,6 +448,32 @@ a {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgb(216.75, 216.75, 216.75);
 }
+.menu__card .card:hover .fa-solid {
+  animation: check-in 400ms ease-out both;
+}
+@keyframes check-in {
+  0%, 50% {
+    color: transparent;
+  }
+  100% {
+    color: white;
+    padding-inline: 20px;
+    width: 20px;
+  }
+}
+.menu__card .card:not(:hover) .fa-solid {
+  animation: check-out 400ms ease-in both;
+}
+@keyframes check-out {
+  0% {
+    color: white;
+    padding-inline: 20px;
+    width: 20px;
+  }
+  50%, 100% {
+    color: transparent;
+  }
+}
 .menu__card .card__content {
   padding-inline: 15px;
   padding-block: 12px;
@@ -474,12 +501,14 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: all 500ms ease-out;
 }
 .menu__card .card__price .fa-solid {
-  color: white;
+  color: transparent;
   background-color: #99E2D0;
   padding-block: 27px;
-  padding-inline: 20px;
+  padding-inline: -1px;
+  width: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }

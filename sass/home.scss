@@ -2,7 +2,7 @@
 $main-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$main-background-color: #9c5b5b;
+$main-background-color: #F6F6F6;
 
 //mixin
 @mixin btn {
@@ -131,7 +131,8 @@ a {
     margin-inline: 20px;
     @media (min-width: 768px) {
         max-width: 1053px;
-        justify-content: center;
+        padding-inline: 20px;
+        margin-inline: auto;
     }
     > h2 {
         margin-bottom: 25px;
