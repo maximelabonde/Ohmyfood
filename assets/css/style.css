@@ -411,10 +411,10 @@ a {
   animation-delay: 200ms;
 }
 .menu__part--2 {
-  animation-delay: 400ms;
+  animation-delay: 800ms;
 }
 .menu__part--3 {
-  animation-delay: 600ms;
+  animation-delay: 1400ms;
 }
 @media (min-width: 768px) {
   .menu__part {
