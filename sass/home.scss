@@ -10,7 +10,6 @@ $main-background-color: #F6F6F6;
     border-radius: 25px;
     background: linear-gradient(0deg, $main-color, $secondary-color);
     color: white;
-    margin-bottom: 57px;
     box-shadow: 0 4px 10px darken(white, 25%);
     transition: all 400ms;
     &:hover {
@@ -126,7 +125,7 @@ a {
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
+    padding-top: 23px;
     padding-bottom: 68px;
     margin-inline: 20px;
     @media (min-width: 768px) {

@@ -56,6 +56,10 @@
             justify-content: center;
             gap: 24px;
         }
+        > h1 {
+            margin-top: 32px;
+            margin-bottom: 0;
+        }
     }
     &__card {
         display: flex;
