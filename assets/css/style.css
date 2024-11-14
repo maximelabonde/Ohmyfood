@@ -383,9 +383,6 @@ a {
     max-width: 1055px;
   }
 }
-.menu .like__btn {
-  margin-right: 40px;
-}
 .menu h2 {
   font-size: 16px;
   font-weight: 300;
@@ -432,6 +429,10 @@ a {
     justify-content: center;
     gap: 24px;
   }
+}
+.menu__title .like__btn {
+  margin-top: 32px;
+  margin-right: 40px;
 }
 .menu__title > h1 {
   margin-top: 32px;
