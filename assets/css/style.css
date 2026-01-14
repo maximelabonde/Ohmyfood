@@ -33,7 +33,7 @@ a {
   margin-top: -10px;
   color: transparent;
   background-clip: text;
-  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
   transition: opacity 500ms;
 }
 .like__btn .fa-solid:hover {
@@ -50,14 +50,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: opacity 3s ease-out;
-  animation-fill-mode: both;
+  animation: opacity 3s ease-out both;
 }
 .loader__animation {
   width: 48px;
   height: 48px;
-  border: 5px solid #9356DC;
-  border-bottom-color: #FF79DA;
+  border: 5px solid #9356dc;
+  border-bottom-color: #ff79da;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
@@ -79,10 +78,11 @@ a {
   100% {
     opacity: 0;
     display: none;
+    pointer-events: none;
   }
 }
 .explorer {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   height: 287px;
 }
@@ -98,17 +98,19 @@ a {
 .explorer__btn {
   position: relative;
   border-radius: 25px;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   color: white;
   box-shadow: 0 4px 10px rgb(191.25, 191.25, 191.25);
   transition: all 400ms;
-  padding-inline: 18px;
-  padding-block: 13px;
-  top: 40px;
 }
 .explorer__btn:hover {
   box-shadow: 0 4px 10px rgb(140.25, 140.25, 140.25);
   filter: brightness(1.1);
+}
+.explorer__btn {
+  padding-inline: 18px;
+  padding-block: 13px;
+  top: 40px;
 }
 
 .fonctionnement {
@@ -142,7 +144,7 @@ a {
   margin-bottom: 25px;
 }
 .fonctionnement__pannel__text {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -153,14 +155,14 @@ a {
   box-shadow: 0 4px 15px rgb(216.75, 216.75, 216.75);
 }
 .fonctionnement__pannel__text .fa-solid {
-  color: #7E7E7E;
+  color: #7e7e7e;
   padding-right: 27px;
 }
 .fonctionnement__pannel__text--color .fa-solid {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonctionnement__pannel > h4 {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   margin: 0;
   padding-inline: 8px;
@@ -296,7 +298,7 @@ a {
 }
 
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 54px;
   padding-bottom: 66px;
   padding-inline: 20px;
@@ -351,7 +353,7 @@ a {
 }
 .restaurants__card .card h5 {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #008766;
   padding-inline: 9px;
   padding-block: 7px;
@@ -368,7 +370,7 @@ a {
 }
 
 .menu {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   padding-inline: 17px;
   padding-bottom: 130px;
@@ -386,7 +388,7 @@ a {
 .menu h2 {
   font-size: 16px;
   font-weight: 300;
-  border-bottom: solid 3px #99E2D0;
+  border-bottom: solid 3px #99e2d0;
   padding-bottom: 5px;
   width: 40px;
 }
@@ -513,7 +515,7 @@ a {
 }
 .menu__card .card__price .fa-solid {
   color: transparent;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding-block: 27px;
   padding-inline: -1px;
   width: 0;
@@ -530,17 +532,19 @@ a {
 .menu__btn {
   position: relative;
   border-radius: 25px;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   color: white;
   box-shadow: 0 4px 10px rgb(191.25, 191.25, 191.25);
   transition: all 400ms;
-  padding-inline: 48px;
-  padding-block: 16px;
-  top: 56px;
 }
 .menu__btn:hover {
   box-shadow: 0 4px 10px rgb(140.25, 140.25, 140.25);
   filter: brightness(1.1);
+}
+.menu__btn {
+  padding-inline: 48px;
+  padding-block: 16px;
+  top: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */

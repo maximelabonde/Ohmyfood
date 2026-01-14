@@ -1,8 +1,8 @@
 //color variables
-$main-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$main-background-color: #F6F6F6;
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$main-background-color: #f6f6f6;
 
 //mixin
 @mixin btn {
@@ -14,19 +14,19 @@ $main-background-color: #F6F6F6;
     transition: all 400ms;
     &:hover {
         box-shadow: 0 4px 10px darken(white, 45%);
-        filter: brightness(1.10);
+        filter: brightness(1.1);
     }
 }
 
 //global property
 * {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
 body {
     margin: 0;
 }
 h1 {
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
 }
 p {
     font-size: 18px;
@@ -39,7 +39,7 @@ a {
 
 .like__btn {
     display: flex;
-    .fa-solid{
+    .fa-solid {
         position: absolute;
         opacity: 0;
         scale: 1.1;
@@ -53,7 +53,7 @@ a {
         transition: opacity 500ms;
         &:hover {
             opacity: 1;
-        }   
+        }
     }
 }
 
@@ -68,8 +68,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: opacity 3s ease-out;
-    animation-fill-mode: both;
+    animation: opacity 3s ease-out both;
     &__animation {
         width: 48px;
         height: 48px;
@@ -79,25 +78,27 @@ a {
         display: inline-block;
         box-sizing: border-box;
         animation: rotation 1s linear infinite;
-        }
-    
-        @keyframes rotation {
+    }
+
+    @keyframes rotation {
         0% {
             transform: rotate(0deg);
         }
         100% {
             transform: rotate(360deg);
         }
-        } 
+    }
 }
 
 @keyframes opacity {
-    0%,80% {
+    0%,
+    80% {
         opacity: 1;
     }
     100% {
         opacity: 0;
         display: none;
+        pointer-events: none;
     }
 }
 
@@ -149,7 +150,7 @@ a {
         align-items: center;
         margin-bottom: 25px;
         &__text {
-            background-color: #F6F6F6;
+            background-color: #f6f6f6;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -159,10 +160,10 @@ a {
             padding-left: 33px;
             box-shadow: 0 4px 15px darken(white, 15%);
             .fa-solid {
-                color: #7E7E7E;
+                color: #7e7e7e;
                 padding-right: 27px;
             }
-            &--color .fa-solid{
+            &--color .fa-solid {
                 color: $main-color;
             }
         }
